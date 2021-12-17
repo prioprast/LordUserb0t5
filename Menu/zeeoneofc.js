@@ -1,12 +1,12 @@
 exports.allmenu = (namabot, pushname, sender, isOwner, isPrem, cekvipp, getLimit, limitawal, limit, balance, getBalance, simbolnya, petik, prefix) => {
 return`Hello ${pushname}🤗 Saya ${namabot}
 
-📛 Nama : ${pushname} 
-🆔 Nomor : @${sender.split("@")[0]} 
-📊 Status : ${isOwner?`Owner ⚔️`:isPrem?`Premium 🏅`:`Free User`} 
+📛 Nama Lu : ${pushname} 
+🆔 Nomor Lu : @${sender.split("@")[0]} 
+📊 Status Lu : ${isOwner?`Owner ⚔️`:isPrem?`Premium 🏅`:`Gratidsan`} 
 🎁 Expired Prem : ${isOwner?`Unlimited Owner`:isPrem ? `${cekvipp.days}d, ${cekvipp.hours}h, ${cekvipp.minutes}m, ${cekvipp.seconds}s`:'Not Premium'}
-💳 Limit : ${isOwner?`Unlimited`: isPrem ? `Unlimited Premium` : getLimit(sender, limitawal, limit) +' / '+limitawal}
-💹 Balance : ${getBalance(sender, balance)}
+💳 Limit Lu : ${isOwner?`Unlimited`: isPrem ? `Unlimited Premium` : getLimit(sender, limitawal, limit) +' / '+limitawal}
+💹 Duit Lu : ${getBalance(sender, balance)}
 
 
 *Owner-Menu*
@@ -27,9 +27,6 @@ ${simbolnya} ${prefix}setcmd [reply stiker]
 ${simbolnya} ${prefix}delcmd [reply stiker]
 ${simbolnya} ${prefix}listcmd
 ${simbolnya} ${prefix}auto [ketik/vn]
-${simbolnya}  > [eval]
-${simbolnya}  => [async]
-${simbolnya}  $ [cmd termux]
 
 *Download-Menu*
 ${simbolnya} ${prefix}play [query]
